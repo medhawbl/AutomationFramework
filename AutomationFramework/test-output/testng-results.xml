@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="0" started-at="2017-01-19T20:20:27Z" finished-at="2017-01-19T20:20:27Z">
+    <groups>
+    </groups>
+  </suite> <!-- Suite -->
+  <suite name="Suite (0)" duration-ms="10045" started-at="2017-01-19T20:20:14Z" finished-at="2017-01-19T20:20:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="10045" started-at="2017-01-19T20:20:14Z" finished-at="2017-01-19T20:20:24Z">
+      <class name="com.wbl.test.HomePageTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.wbl.test.HomePageTest@4c70fda8]" name="beforeSuite" is-config="true" duration-ms="2299" started-at="2017-01-19T12:20:12Z" finished-at="2017-01-19T12:20:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.wbl.test.HomePageTest@4c70fda8]" name="before" is-config="true" duration-ms="6496" started-at="2017-01-19T12:20:14Z" finished-at="2017-01-19T12:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testNavLinks()[pri:0, instance:com.wbl.test.HomePageTest@4c70fda8]" name="testNavLinks" duration-ms="42" started-at="2017-01-19T12:20:21Z" finished-at="2017-01-19T12:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavLinks -->
+        <test-method status="PASS" signature="testSearchBox()[pri:0, instance:com.wbl.test.HomePageTest@4c70fda8]" name="testSearchBox" duration-ms="3493" started-at="2017-01-19T12:20:21Z" finished-at="2017-01-19T12:20:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchBox -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.wbl.test.HomePageTest@4c70fda8]" name="afterSuite" is-config="true" duration-ms="2407" started-at="2017-01-19T12:20:24Z" finished-at="2017-01-19T12:20:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.wbl.test.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite (0) -->
+</testng-results>
