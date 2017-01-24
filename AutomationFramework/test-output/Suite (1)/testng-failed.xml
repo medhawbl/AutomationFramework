@@ -6,7 +6,6 @@
       <class name="com.wbl.test.LoginPageTest">
         <methods>
           <include name="beforeSuite"/>
-          <include name="before"/>
           <include name="testLogin"/>
         </methods>
       </class> <!-- com.wbl.test.LoginPageTest -->

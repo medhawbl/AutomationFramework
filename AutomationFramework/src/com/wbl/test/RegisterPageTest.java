@@ -14,10 +14,9 @@ public class RegisterPageTest extends BaseTest{
 	HomePage hm;
 	
 	@BeforeClass
-	public void before(){		
-		rp = new  RegisterPage(driver);
-		hm.navigateToHomePage();
-		hm.clickCreateAccount();
+	public void before(){
+		hm = new HomePage(driver);
+		rp = hm.clickCreateAccount();
 	}
 	
 	@Test

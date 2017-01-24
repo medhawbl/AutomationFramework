@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">2 suites</span>
+      <span class="top-banner-font-1">2 suites, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite_(0)">
-              <span class="suite-name border-passed">Suite (0)</span>
+              <span class="suite-name border-failed">Suite (0)</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite_(0)">
-                    <span>C:\Users\WBL\MedhaWorkspace\AutomationFramework\build\testng-home.xml</span>
+                    <span>C:\Users\WBL\MedhaWorkspace\AutomationFramework\build\testng-login.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite_(0)" class="hide-methods failed suite-Suite_(0)"> (hide)</a> <!-- hide-methods failed suite-Suite_(0) -->
+                      <a href="#" panel-name="suite-Suite_(0)" class="show-methods failed suite-Suite_(0)"> (show)</a> <!-- show-methods failed suite-Suite_(0) -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite_(0)">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_(0)" title="com.wbl.test.LoginPageTest" hash-for-method="testLogin(m@p.com, test678)">testLogin(m@p.com, test678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_(0)" title="com.wbl.test.LoginPageTest" hash-for-method="testLogin(q@s.com, test890)">testLogin(q@s.com, test890)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite_(0) -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,12 +120,12 @@
                     <div class="method-list-content passed suite-Suite_(0)">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_(0)" title="com.wbl.test.HomePageTest" hash-for-method="testNavLinks">testNavLinks</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_(0)" title="com.wbl.test.LoginPageTest" hash-for-method="testLogin(x@y.com, test456)">testLogin(x@y.com, test456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_(0)" title="com.wbl.test.HomePageTest" hash-for-method="testSearchBox">testSearchBox</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_(0)" title="com.wbl.test.LoginPageTest" hash-for-method="testLogin(a@a.com, test123)">testLogin(a@a.com, test123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite_(0) -->
@@ -123,24 +142,76 @@
         <div panel-name="suite-Suite" class="panel Suite">
         </div> <!-- panel Suite -->
         <div panel-name="suite-Suite_(0)" class="panel Suite_(0)">
-          <div class="suite-Suite_(0)-class-passed">
+          <div class="suite-Suite_(0)-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.wbl.test.HomePageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.wbl.test.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testNavLinks">
-                  </a> <!-- testNavLinks -->
-                  <span class="method-name">testNavLinks</span>
+                  <a name="testLogin(m@p.com, test678)">
+                  </a> <!-- testLogin(m@p.com, test678) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(m@p.com, test678)</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=55.0.2883.87)
+  (Driver info: chromedriver=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;LAPTOP-QT9092SR&apos;, ip: &apos;10.1.10.198&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.27.440174 (e97a722caafc2d3a8b807ee115bfb307f7d2cfd9), userDataDir=C:\Users\WBL\AppData\Local\Temp\scoped_dir11796_7323}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=55.0.2883.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a0384986dfbf69095cf8af71362b0ab9
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:116)
+	at com.wbl.page.LoginPage.login(LoginPage.java:27)
+	at com.wbl.test.LoginPageTest.testLogin(LoginPageTest.java:40)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testSearchBox">
-                  </a> <!-- testSearchBox -->
-                  <span class="method-name">testSearchBox</span>
+                  <a name="testLogin(q@s.com, test890)">
+                  </a> <!-- testLogin(q@s.com, test890) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(q@s.com, test890)</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at com.wbl.page.LoginPage.login(LoginPage.java:27)
+	at com.wbl.test.LoginPageTest.testLogin(LoginPageTest.java:40)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_(0)-class-failed -->
+          <div class="suite-Suite_(0)-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.wbl.test.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(x@y.com, test456)">
+                  </a> <!-- testLogin(x@y.com, test456) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(x@y.com, test456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(a@a.com, test123)">
+                  </a> <!-- testLogin(a@a.com, test123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(a@a.com, test123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -155,8 +226,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.wbl.helper.LoggerListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;suite-files&gt;
-    &lt;suite-file path=&quot;build/testng-home.xml&quot;/&gt;
+    &lt;suite-file path=&quot;build/testng-login.xml&quot;/&gt;
   &lt;/suite-files&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
@@ -164,7 +238,7 @@
         </div> <!-- panel -->
         <div panel-name="test-xml-Suite_(0)" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\WBL\MedhaWorkspace\AutomationFramework\build\testng-home.xml</span>
+            <span class="header-content">C:\Users\WBL\MedhaWorkspace\AutomationFramework\build\testng-login.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -173,7 +247,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite (0)&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.wbl.test.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.wbl.test.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite (0) --&gt;
@@ -253,20 +327,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSearchBox')
-data.setCell(0, 2, 'com.wbl.test.HomePageTest')
-data.setCell(0, 3, 3493);
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'com.wbl.test.LoginPageTest')
+data.setCell(0, 3, 5538);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testNavLinks')
-data.setCell(1, 2, 'com.wbl.test.HomePageTest')
-data.setCell(1, 3, 42);
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'com.wbl.test.LoginPageTest')
+data.setCell(1, 3, 4576);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLogin')
+data.setCell(2, 2, 'com.wbl.test.LoginPageTest')
+data.setCell(2, 3, 2322);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogin')
+data.setCell(3, 2, 'com.wbl.test.LoginPageTest')
+data.setCell(3, 3, 2214);
 window.suiteTableData['Suite_(0)']= { tableData: data, tableDiv: 'times-div-Suite_(0)'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite_(0)">
               </div> <!-- times-div-Suite_(0) -->
             </div> <!-- times-div -->
@@ -313,26 +395,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.wbl.test.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.wbl.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">before</span>
-                <span class="method-start">2305 ms</span>
+                <span class="method-start">8919 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testNavLinks</span>
-                <span class="method-start">8805 ms</span>
+                <span class="method-name">testLogin(a@a.com, test123)</span>
+                <span class="method-start">12217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testSearchBox</span>
-                <span class="method-start">8848 ms</span>
+                <span class="method-name">testLogin(x@y.com, test456)</span>
+                <span class="method-start">17760 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(m@p.com, test678)</span>
+                <span class="method-start">22340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(q@s.com, test890)</span>
+                <span class="method-start">24668 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">12372 ms</span>
+                <span class="method-start">26919 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

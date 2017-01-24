@@ -14,11 +14,19 @@ public class LoginPage {
 		this.driver = driver;
 	}
 	
-	public String login(String username, String pwd){
+	public String getTitle(){
+		return driver.getTitle();
+	}
+	
+	public String login(String username, String pwd) throws InterruptedException{
 		String result=null;
 		List<WebElement> elements = driver.findElements(By.cssSelector(".form-control"));
+		elements.get(0).clear();
 		elements.get(0).sendKeys(username);
+		Thread.sleep(2000);
+		elements.get(1).clear();
 		elements.get(1).sendKeys(pwd);
+		Thread.sleep(2000);
 		
 		driver.findElement(By.xpath("//*[text()='Sign In']")).click();
 		result = driver.getTitle();

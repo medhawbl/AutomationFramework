@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
-<suite-files>
-<suite-file path="build/testng-home.xml"></suite-file><!-- 
-<suite-file path="build/testng-login.xml"></suite-file>
-<suite-file path="build/testng-register.xml"></suite-file> -->
+<listeners>
+		<listener class-name="com.wbl.helper.LoggerListener" />
+	</listeners>
+<suite-files><!-- 
+<suite-file path="build/testng-home.xml"></suite-file>  -->
+<suite-file path="build/testng-login.xml"></suite-file><!-- 
+<suite-file path="build/testng-register.xml"></suite-file>  -->
 </suite-files>
 </suite> 

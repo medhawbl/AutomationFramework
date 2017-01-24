@@ -14,6 +14,11 @@ public class RegisterPage {
 		this.driver = driver;
 	}
 	
+
+	public String getTitle(){
+		return driver.getTitle();
+	}
+	
 	public String register(String firstname,String lastname,String email, String pwd){
 		List<WebElement> elements = driver.findElements(By.cssSelector(".form-control"));
 		elements.get(0).sendKeys(firstname);

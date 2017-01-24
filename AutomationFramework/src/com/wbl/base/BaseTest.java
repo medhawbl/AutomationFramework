@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.wbl.helper.ByClass;
 import com.wbl.helper.WebUIDriver;
 
 
@@ -21,6 +22,8 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 		driver = WebUIDriver.getDriver();
+		driver.get(WebUIDriver.appUrl);
+		ByClass.loadProperties();
 	}
 	
 	
